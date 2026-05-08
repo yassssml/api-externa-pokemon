@@ -18,7 +18,7 @@ export default function App() {
 
   async function buscarPersonagem() {
     if (nome.trim().length === 0) {
-      Alert.alert('Nome inválido', 'Digite o nome do personagem.');
+      Alert.alert('Nome inválido', 'Digite o nome do pokemon.');
       return;
     }
 
@@ -60,11 +60,11 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>🔎 Busca Personagem</Text>
+      <Text style={styles.titulo}>⚡Buscar Pokémon!</Text>
 
       <TextInput
         style={styles.input}
-        placeholder="Digite o nome do personagem"
+        placeholder="Digite o nome do pokemon"
         value={nome}
         onChangeText={setNome}
         returnKeyType="search"
